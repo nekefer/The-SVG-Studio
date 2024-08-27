@@ -1,0 +1,58 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+}
+main {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+}
+section {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+.toolbar, .properties {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* padding:.5rem; */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem 0;
+}
+
+ul li {
+    list-style: none;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+
+/* canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */

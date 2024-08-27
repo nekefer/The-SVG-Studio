@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The svg studio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="toolbar" id="toolbar">
+                <h1>The SVG Studio</h1>
+                <div class="row">
+                    <h2 for="shape">Shapes</h2>
+                    <ul class="shapes">
+                        <li class="shape">Rectangle</li>
+                        <li class="shape">Circle</li>
+                        <li class="shape">Polygon</li>
+                        <li class="shape">Line</li>
+                        <li class="shape">Curve</li>
+                        <li class="shape">Text</li>
+                    </ul>
+                </div>
+                <div class="options row" >
+                    <label for="option">Options</label>
+                    <ul class="">
+                        <li>brush</li>
+                        <li>eraser</li>
+                    </ul>
+                   
+
+                </div>
+        </section>
+        <section class="draw-board">
+            <canvas id="canvas"></canvas>
+        </section>
+        <section class="properties" id="properties">
+            <div class="row">
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div class="row">
+                <label for="stroke">Stroke</label>
+                <input type="number" name="stroke" id="stroke" min="1" max="100" value="1">
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
